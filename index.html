@@ -1,0 +1,50 @@
+<DOCTYPE! html>
+<html>
+<head><title>Morse Encoder</title>
+<style>
+.center {
+    margin: auto;
+    width: 60%;
+    
+    padding: 10px;
+}
+input:invalid {
+  border: 2px solid #DE5D83;
+}
+
+input:valid {
+  border: 2px solid lightblue;
+}
+p {
+	color:#FAD6A5 ;
+	font-family: courier;
+    font-size: 20px;
+}
+button {
+	color:#FAD6A5;
+	background-color:#FE6F5E;
+	font-family: courier;
+    cursor: pointer;
+    font-size: 20px;
+}
+label {
+	color:#FAD6A5 ;
+	font-family: courier;
+    font-size: 20px;
+}
+body {
+   
+    background-color: #007AA5;
+}
+</style>
+<body>
+<div class = 'center'>
+<p><strong>Type a number, letter, word or phrase.</strong></p>
+<input type = 'text' id = 'nlw' require pattern = [A-Za-z]*[0-9]*[ ]>
+<button onclick = 'encode()'>Encode</button><br><br><br>
+<label id = 'sb'></label><br>
+<label id = 'code'></label>
+<script src = "/Users/olubodeajayi/repos/morseencoder/Morse-Encoder.js"></script>
+<div>
+</body>
+</html>
